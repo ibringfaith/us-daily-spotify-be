@@ -1,0 +1,21 @@
+---
+layout: default
+title: Blue & Grey
+---
+
+<h2>Blue & Grey</h2>
+
+<!-- Blue & Grey -->
+{% assign blue-&-grey = site.data.blue-&-grey %}
+{% assign blue-&-grey = blue-&-grey | sort:"Day" %}
+
+<!-- Document -->
+
+{% for blue in blue-&-grey %}
+
+<ul>
+<li><strong>{{ blue.Day }}</strong> ({{ blue.Rank }}, {{ blue.Streams }})</li>
+</ul>
+
+{% endfor %}
+

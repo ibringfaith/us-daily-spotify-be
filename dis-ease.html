@@ -1,0 +1,20 @@
+---
+layout: default
+title: Dis-ease
+---
+
+<h2>Dis-ease</h2>
+
+<!-- Dis-ease -->
+{% assign dis-ease = site.data.dis-ease %}
+{% assign dis-ease = dis-ease | sort:"Day" %}
+
+<!-- Document -->
+
+{% for dis in dis-ease %}
+
+<ul>
+<li><strong>{{ dis.Day }}</strong> ({{ dis.Rank }}, {{ dis.Streams }})</li>
+</ul>
+
+{% endfor %}

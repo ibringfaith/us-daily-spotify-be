@@ -1,0 +1,21 @@
+---
+layout: default
+title: Fly To My Room
+---
+
+<h2>Fly To My Room</h2>
+
+<!-- Fly To My Room -->
+{% assign fly-to-my-room = site.data.fly-to-my-room %}
+{% assign fly-to-my-room = fly-to-my-room | sort:"Day" %}
+
+<!-- Document -->
+
+{% for fly in fly-to-my-room %}
+
+<ul>
+<li><strong>{{ fly.Day }}</strong> ({{ fly.Rank }}, {{ fly.Streams }})</li>
+</ul>
+
+{% endfor %}
+

@@ -1,0 +1,20 @@
+---
+layout: default
+title: BE on US Daily Spotify
+---
+
+<h2>BE on US Daily Spotify</h2>
+
+<!-- BE -->
+{% assign be = site.data.be %}
+{% assign be = be | sort:"Song" %}
+
+<!-- Document -->
+
+{% for bes in be %}
+
+<ul>
+<li><strong>{{ bes.Song }}</strong> ({{ bes.Streams }}, {{ bes.Peak }})</li>
+</ul>
+
+{% endfor %}

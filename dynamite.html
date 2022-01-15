@@ -1,0 +1,20 @@
+---
+layout: default
+title: Dynamite
+---
+
+<h2>Dynamite</h2>
+
+<!-- Dynamite -->
+{% assign dynamite = site.data.dynamite %}
+{% assign dynamite = dynamite | sort:"Day" %}
+
+<!-- Document -->
+
+{% for dynamites in dynamite %}
+
+<ul>
+<li><strong>{{ dynamites.Day }}</strong> ({{ dynamites.Rank }}, {{ dynamites.Streams }})</li>
+</ul>
+
+{% endfor %}

@@ -1,0 +1,20 @@
+---
+layout: default
+title: skit
+---
+
+<h2>Skit</h2>
+
+<!-- Skit -->
+{% assign skit = site.data.skit %}
+{% assign skit = skit | sort:"Day" %}
+
+<!-- Document -->
+
+{% for skits in skit %}
+
+<ul>
+<li><strong>{{ skits.Day }}</strong> ({{ skits.Rank }}, {{ skits.Streams }})</li>
+</ul>
+
+{% endfor %}

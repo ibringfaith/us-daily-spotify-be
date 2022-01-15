@@ -1,0 +1,20 @@
+---
+layout: default
+title: Telepathy
+---
+
+<h2>Telepathy</h2>
+
+<!-- Telepathy -->
+{% assign telepathy = site.data.telepathy %}
+{% assign telepathy = telepathy | sort:"Day" %}
+
+<!-- Document -->
+
+{% for tele in telepathy %}
+
+<ul>
+<li><strong>{{ tele.Day }}</strong> ({{ tele.Rank }}, {{ tele.Streams }})</li>
+</ul>
+
+{% endfor %}

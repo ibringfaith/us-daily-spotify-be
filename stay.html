@@ -1,0 +1,20 @@
+---
+layout: default
+title: Stay
+---
+
+<h2>Stay</h2>
+
+<!-- Stay -->
+{% assign stay = site.data.stay %}
+{% assign stay = stay | sort:"Day" %}
+
+<!-- Document -->
+
+{% for stays in stay %}
+
+<ul>
+<li><strong>{{ stays.Day }}</strong> ({{ stays.Rank }}, {{ stays.Streams }})</li>
+</ul>
+
+{% endfor %}
