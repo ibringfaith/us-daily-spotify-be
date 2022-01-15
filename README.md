@@ -1,2 +1,2 @@
 # us-daily-spotify-be
-This repository tracks the amount of streams BE has on United States dailySpotify/
+This repository tracks the amount of streams BE has on United States daily Spotify.
