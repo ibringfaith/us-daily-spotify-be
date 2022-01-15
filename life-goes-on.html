@@ -6,15 +6,15 @@ title: Life Goes On
 <h2>Life Goes On</h2>
 
 <!-- Life Goes On -->
-{% assign life-goes-on = us-spotify-be-main.data.life-goes-on %}
-{% assign life-goes-on = life-goes-on | sort:"Day" %}
+{% assign life-goes-on = site.data.life-goes-on %}
+{% assign life-goes-on = life-goes-on | sort:"Name" %}
 
 <!-- Document -->
 
 {% for life in life-goes-on %}
 
 <ul>
-<li><strong>{{ life.Day }}</strong> ({{ life.Rank }}, {{ life.Streams }})</li>
+<li><strong>{{ life.Name }}</strong> ({{ life.Date }}, {{ life.Amount }})</li>
 </ul>
 
 {% endfor %}
