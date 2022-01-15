@@ -6,12 +6,12 @@ title: Life Goes On
 <h2>Life Goes On</h2>
 
 <!-- Life Goes On -->
-{% assign life-goes-on = site.data.life-goes-on %}
-{% assign life-goes-on = life-goes-on | sort:"Name" %}
+{% assign lifegoes = site.data.life-goes-on %}
+{% assign lifegoes = life-goes-on | sort:"Name" %}
 
 <!-- Document -->
 
-{% for life in life-goes-on %}
+{% for life in lifegoes %}
 
 <ul>
 <li><strong>{{ life.Name }}</strong> ({{ life.Date }}, {{ life.Amount }})</li>
